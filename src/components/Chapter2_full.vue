@@ -16,7 +16,7 @@
       </tr>
       </thead>
       <tbody id="contacts">
-        <tr v-for="c in filtered" v-bind:key="c">
+        <tr v-for="(c , i) in filtered" v-bind:key="i">
           <td>{{c.no}}</td>
           <td>{{c.name}}</td>
           <td>{{c.capital}}</td>

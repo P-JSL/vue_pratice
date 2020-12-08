@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <fulls></fulls>
+    <br/>
+    <getset></getset><br/>
+    <method></method>
     <!--<input id="a" type="text" v-bind:value="msg">
     <br/>
     <img v-bind:src="imagePath">
@@ -33,10 +36,15 @@ import prev from  './components/OtherDerec'
 import com01 from './components/Computed_01'
 */
 import fulls from './components/Chapter2_full'
+import getset from './components/getset'
+import Md from "@/components/md";
+
 export default {
   name: 'App',
   components : {
-    "fulls" : fulls
+    "fulls" : fulls,
+    "getset" : getset,
+    "method" : Md
     /*'ifshow':ifshow,
     'elsfif':elsfif,
     'fors' : fors,
